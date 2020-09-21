@@ -29,8 +29,9 @@
 body {
     background: var(--color-bg);
     font-family: var(--font-sans);
-    color: var(--color-text-primary);
     line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    color: var(--color-text-primary);
 }
 
 a {
