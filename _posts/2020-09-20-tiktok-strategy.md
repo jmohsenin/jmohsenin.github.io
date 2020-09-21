@@ -3,7 +3,7 @@ layout: post
 title:  "The Algorithm Isn't Everything: TikTok's Virtuous Cycle"
 description: "How TikTok’s product design, growth strategy, and algoirthm compound to form strong network effects."
 date:   2020-09-20 19:06:07 -0700
-image: /assets/images/tiktok-cycle.png
+image: /assets/images/tiktok-cycle.png?1
 ---
 TikTok's algorithm must have the best PR in all of tech: a prevalent view is that it's the singular magic behind TikTok's success:
 
