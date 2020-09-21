@@ -57,7 +57,7 @@ h1, h2, h3 {
 /* Nasty little hack to get type looking a little better on mobile Safari */
 @supports (-webkit-touch-callout: none) {
     h1, h2, h3 {
-        letter-spacing: -0.03rem;
+        letter-spacing: -0.03em;
     }
 }
 
