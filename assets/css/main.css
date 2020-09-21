@@ -54,6 +54,13 @@ h1, h2, h3 {
     font-family: var(--font-serif);
 }
 
+/* Nasty little hack to get type looking a little better on mobile Safari */
+@supports (-webkit-touch-callout: none) {
+    h1, h2, h3 {
+        letter-spacing: -0.03rem;
+    }
+}
+
 h1 {
     font-size: 2rem;
     margin: var(--spacing-xl) 0 var(--spacing-m);
