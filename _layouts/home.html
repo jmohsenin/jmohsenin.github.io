@@ -1,41 +1,43 @@
 ---
 layout: default
 ---
+<p>Hi I’m Jackson Mohsenin, a software designer based in San Francisco. A lot of folks call me JMO.</p>
 
-<div class="home">
-    <p>Hi I’m Jackson Mohsenin, a software designer based in San Francisco. A lot of folks call me JMO.</p>
+<p>I recently spent six years designing at Quora, where I got to integrate design and code in a day-to-day role,
+    drive major parts of company strategy, and manage a wonderful team of designers.</p>
 
-    <p>I recently spent six years designing at Quora, where I got to integrate design and code in a day-to-day role,
-        drive major parts of company strategy, and manage a wonderful team of designers.</p>
+<p>Now I’m tinkering on personal projects, working with early-stage startups on design and strategy, and writing about
+    the interplay between design, machine learning, and social systems.</p>
 
-    <p>Now I’m tinkering on personal projects, working with early-stage startups on design and strategy, and writing about the interplay between design, machine learning, and social systems.</p>
+<p>Say hi if you’re interested in working together:</p>
+<p class="color-text--secondary">
+    <a class="color--inherit text-transform--uppercase" 
+        href="https://twitter.com/jmohsenin">@jmohsenin</a> • 
+    <a class="color--inherit text-transform--uppercase"
+        href="mailto:jmohsenin@gmail.com">jmohsenin@gmail.com</a></p>
 
-    <p>Say hi if you’re interested in working together:</p>
-    <p class="color-text-secondary"><a class="color-inherit text-transform-uppercase" href="https://twitter.com/jmohsenin">@jmohsenin</a> • <a class="color-inherit text-transform-uppercase" href="mailto:jmohsenin@gmail.com">jmohsenin@gmail.com</a></p>
-
-    {%- if site.posts.size > 0 -%}
-    <div class="post-list">
-        {%- for post in site.posts -%}
-            <div class="post-list-item">
-                <h3><a class="color-text-primary" href="{{ post.url | relative_url }}">
-                        {{ post.title | escape }}
-                </a></h3>
-                {{ post.description }}
-            </div>
-        {%- endfor -%}
-        <div class="post-list-item">
-            <h3 class="color-text-secondary">
-                Interfaces That Help Machine Learning
-            </h3>
-            Coming soon!
-        </div>
-        <div class="post-list-item">
-            <h3><a class="color-text-primary" href="https://www.quora.com/q/quoradesign/Snapchat-and-the-Myth-of-Unintuitive-Design">
+{%- if site.posts.size > 0 -%}
+<div class="post-list">
+    {%- for post in site.posts -%}
+    <div class="post-list-item">
+        <h3><a class="color-text--primary" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+            </a></h3>
+        {{ post.description }}
+    </div>
+    {%- endfor -%}
+    <div class="post-list-item">
+        <h3 class="color-text--secondary">
+            Interfaces That Help Machine Learning
+        </h3>
+        Coming soon!
+    </div>
+    <div class="post-list-item">
+        <h3><a class="color-text--primary"
+                href="https://www.quora.com/q/quoradesign/Snapchat-and-the-Myth-of-Unintuitive-Design">
                 Snapchat and the Myth of Unintuitive Design
             </a></h3>
-            Debunking the myth that Snapchat's hard-to-discover UX was a key part of their success.
-        </div>
+        Debunking the myth that Snapchat's hard-to-discover UX was a key part of their success.
     </div>
-    {%- endif -%}
-
 </div>
+{%- endif -%}

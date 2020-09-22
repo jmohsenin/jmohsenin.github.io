@@ -79,23 +79,27 @@ h3 {
 /* Utility Classes */ 
 /* ----------------------------------------------------- */
 
-.color-text-primary {
+.color-text--primary {
     color: var(--color-text-primary);
 }
 
-.color-text-secondary {
+.color-text--secondary {
     color: var(--color-text-secondary);
 }
-.color-inherit {
+.color--inherit {
     color: inherit;
 }
 
-.text-transform-uppercase {
+.text-transform--uppercase {
     text-transform: uppercase;
 }
 
-.display-inline-block {
+.display-inline--block {
     display: inline-block;
+}
+
+.align-self--center {
+    align-self: center;
 }
 
 /* Element-specific */ 
@@ -139,10 +143,6 @@ h3 {
     height: 70px;
 }
 
-.header-link {
-    align-self: center;; 
-}
-
 .post-list {
     border-top: 1px solid var(--color-border);
     margin-top: var(--spacing-l);
@@ -151,4 +151,19 @@ h3 {
 
 .post-list-item {
     margin-bottom: var(--spacing-l);
+}
+
+
+footer {
+    border-top: 1px solid var(--color-border);
+    padding: var(--spacing-l) 0 var(--spacing-xl);
+    margin-top: var(--spacing-l);
+    display: flex;
+}
+
+.profile-photo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    margin-right: var(--spacing-l);
 }

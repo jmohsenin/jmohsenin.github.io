@@ -1,6 +1,6 @@
 {% if page.layout == 'home' %}
   <header class="header header-home" role="banner">
-    <div class="display-inline-block">
+    <div class="display-inline--block">
       <svg class="logo logo-home" width="85" height="33" viewBox="0 0 85 33"
         xmlns="http://www.w3.org/2000/svg">
         <path
@@ -14,7 +14,7 @@
   </header>
 {% else %}
   <header class="header" role="banner">
-    <a class="display-inline-block" href="{{ "/" | relative_url }}">
+    <a class="display-inline--block" href="{{ "/" | relative_url }}">
       <svg class="logo logo-linked" width="85" height="33" viewBox="0 0 85 33"
         xmlns="http://www.w3.org/2000/svg">
         <path
@@ -25,7 +25,7 @@
           d="M80.0923 5.46C76.3723 5.46 72.8023 7.53 69.9523 9.21C68.9323 7.83 67.3423 6.99 65.6023 6.99C63.2023 6.99 61.6423 8.55 61.6423 10.56C61.6423 12.21 62.7823 13.26 64.6423 13.26C65.2123 13.26 65.8423 13.14 66.4723 12.93C66.0823 15.6 64.8223 19.65 62.1823 19.65C60.2923 19.65 59.5723 18.51 59.5723 16.74C59.5723 13.23 60.9223 8.79 62.1523 7.71L61.7323 6.84C58.4323 7.74 55.0723 10.29 55.0723 15.15C55.0723 18.93 58.0123 21.45 62.3623 21.45C67.6723 21.45 71.0923 17.73 71.0923 12.99C71.0923 12.18 70.9723 11.43 70.7323 10.77L70.8223 10.71C73.4023 9.21 76.1323 7.62 78.8023 7.62C80.5123 7.62 80.8123 8.46 80.8123 8.97C80.8123 9.48 80.3323 10.08 80.3323 10.71C80.3323 11.67 81.1123 12.33 82.1923 12.33C83.8123 12.33 84.7723 11.07 84.7723 9.27C84.7723 7.38 83.3923 5.46 80.0923 5.46ZM63.3823 10.23C63.3823 9.45 63.8923 8.79 64.7923 8.79C65.7823 8.79 66.4723 9.54 66.5923 11.04C65.9323 11.31 65.3623 11.46 64.8523 11.46C63.7423 11.46 63.3823 10.8 63.3823 10.23Z" />
       </svg>
     </a>
-    <a class="color-text-secondary text-transform-uppercase header-link"
+    <a class="color-text--secondary text-transform--uppercase align-self--center"
       href="https://twitter.com/jmohsenin">@jmohsenin</a>
   </header>
 {% endif %}

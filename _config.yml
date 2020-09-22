@@ -20,16 +20,14 @@
 
 title: Jackson Mohsenin
 tagline: Jackson Mohsenin's Personal Website
+email: jmohsenin@gmail.com
+url: "http://jmohsenin.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
 author:
   twitter: jmohsenin
-email: jmohsenin@gmail.com
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://jmohsenin.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter:
   username: jmohsenin
   card: summary_large_image
-github_username: jmohsenin
-show_excerpts: true
 
 permalink: /:title
 
