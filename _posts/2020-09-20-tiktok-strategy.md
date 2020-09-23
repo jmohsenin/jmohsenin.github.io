@@ -15,32 +15,32 @@ If network effects are what keeps TikTok on top today, is the algorithm responsi
 
 ## TikTok's Virtuous Cycle
 
-![TikTok's Virtuous Cycle](/assets/images/tiktok-cycle.png)
-
 To understand TikTok's strategy, Michael Porter's framework is a useful guide. In his seminal ["What Is Strategy?" paper](https://hbr.org/1996/11/what-is-strategy) ([non-paywall slide summary](https://www.slideshare.net/hitnrun10/what-is-strategy-30278968)), he laid out a framework for what defines a successful strategy:
 
 - **Strategy relies on unique activities**: the essence of strategy is choosing to *do* different things and not just rely on general operational effectiveness, which is easily copyable.
 - **Strategic strength comes from the fit between unique activities:** the unique activities need to be compatible, and ideally compound, such that the total value of all of them is larger than the sum of its parts.
 - **Activities must require tradeoffs**: some activities are incompatible with each other, while others are a large opportunity cost. If neither is true about the activities a company chooses, a competitor can engage in those same activities with little downside.
 
-When a strategy is successful, it often forms a virtuous cycle: the activities compound  in a powerful feedback loop that causes the product to improve at a faster and faster rate. What is TikTok's virtuous cycle? First, let's look at some of their activities:
+When a strategy is successful, it often forms a virtuous cycle: the activities compound in a powerful feedback loop that causes the product to improve at a faster and faster rate. What is TikTok's virtuous cycle? Understanding their core activities is a crucial first step:
 
 - Videos are short, making them easy to consume and to make
-- Most videos people watch are made by creators they don't know in real life (family/friends) or recognize (influencers/brands)
+- Consumers mostly watch videos made by creators they don't know in real life (family/friends) or recognize (influencers/brands)
 - Videos are primarily distributed by an algorithm instead of by a follow graph
 - TikTok's UX (auto-playing videos watched one at a time) generates rich signal for every video watched, helping the algorithm learn a person's preferences quickly (to be expanded on in a future post)
 - Music is remixable and the main way trends get started and grow
 
-Not every activity is unique to TikTok – videos on Instagram are short, YouTube distributes videos algorithmically – but how those activities fit together and compound is unique to TikTok:
+These activities aren't all unique to TikTok – videos on Instagram are short, YouTube distributes videos algorithmically – but how they fit together and _compound_ is unique to TikTok:
 
 - ML algorithms like TikTok's suffer from [the cold start problem](https://en.wikipedia.org/wiki/Cold_start_(recommender_systems)): it's difficult to make good predictions about what you will like before you use it. The videos on TikTok are short, so it's easy for consumers to watch many of them at once, and their UX provides rich signal about every video.
 - If the videos are short, you need a lot of it to fill the [45 minutes per day the average person spends on TikTok](https://www.fastcompany.com/90395898/is-tiktok-a-time-bomb). Making consumers follow enough creators to fill up a feed would be extremely cumbersome, so instead TikTok pulls in creators from everywhere in the main "For You" page. This is only possible because the algorithm can quickly learn about consumer's preferences via the rich signal from short videos.
 - How do creators know what kinds of videos to make, and how will the find an audience? Remixable music provides a signal of demand about what consumers want to watch and provides context and an audience for a creator to riff off of, [no matter how weird](https://www.tiktok.com/music/Mi-Pan-Su-Sus-6833400908727061253).
 
-The compounding strength of this strategy is made crystal clear when you consider how frictionless it is for both creators and consumers to have a great experience on TikTok, and how that only gets better as TikTok gets bigger:
+The compounding strength of this strategy is made crystal clear when you consider how frictionless it is for both creators and consumers to have a great experience on TikTok, and how it gets better for both groups as TikTok gets bigger:
 
 - **Creators**: make videos using music as context, audience, and signal without having to develop an audience first or risk alienation of people you know in real life; as more and more consumers use TikTok, the niches only get deeper and weirder, and the algorithm gets better and better at routing your videos to the right consumers.
 - **Consumers**: get a great feed experience without having to do any work to find and follow accounts; your feed gets better and better as TikTok gets more data about what you like and creators make more videos for every conceivable niche.
+
+![TikTok's Virtuous Cycle](/assets/images/tiktok-cycle.png)
 
 This is a strong strategy, but critically, *this needs a certain amount of scale to work.* When TikTok was much smaller, many of these effects were much weaker. Fewer creators leads to fewer videos to choose from, making TikTok less engaging to consumers. Fewer consumers leads to a smaller potential audience, making it less enticing for creators. How do you solve for this and get to scale quickly, in a landscape as saturated as consumer internet? Paid acquisition. TikTok spent $1b on it throughout 2018 alone, becoming [the second-most downloaded app in 2019](https://sensortower.com/blog/tiktok-revenue-downloads-2019), [topping 2 billion downloads by April 2020](https://sensortower.com/blog/tiktok-downloads-2-billion), and recently announcing they have [100 million MAUs in the US alone, 50% of those DAUs](https://www.cnbc.com/2020/08/24/tiktok-reveals-us-global-user-growth-numbers-for-first-time.html). This is an enormous amount of money to spend on user acquisition and only makes sense if your ARPU exceeds your CAC (unclear for TikTok) and/or you have strong network effects. [With a rumored valuation in the $60 billion range](https://markets.businessinsider.com/news/stocks/bytedance-60-billion-tiktok-global-us-valuation-2020-9-1029606381), it seems that bet paid off.
 
