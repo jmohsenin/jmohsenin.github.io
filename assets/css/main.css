@@ -168,7 +168,7 @@ h3 {
 /* Gross but the only way to fit Twitter/Email info on one line on phones */
 @media only screen and (max-width: 410px) {
     .contact-info {
-        font-size: 0.91em;
+        font-size: 0.9em;
     }
 }
 
