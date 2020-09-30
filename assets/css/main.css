@@ -21,6 +21,8 @@
     --spacing-m: 16px;
     --spacing-l: 32px;
     --spacing-xl: 64px;
+
+    --container-width: 660px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -46,10 +48,11 @@ body {
     box-sizing: border-box;
 }
 
-@media only screen and (min-width: 630px) {
+@media only screen and (min-width: 692px) {
     body {
         font-size: 1.15em;
         letter-spacing: -0.014em;
+        line-height: 1.6;
     }
 }
 
@@ -133,9 +136,9 @@ h3 {
     padding: var(--spacing-m) calc(var(--spacing-m) + var(--spacing-s));
 }
 
-@media only screen and (min-width: 630px) {
+@media only screen and (min-width: 692px) {
     .container {
-        width: 630px;
+        width: calc(var(--container-width) + var(--spacing-l));
     }
 }
 
