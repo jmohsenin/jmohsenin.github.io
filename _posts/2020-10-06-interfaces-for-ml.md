@@ -65,13 +65,13 @@ Finally, a dry but effective pattern is to just survey users. However, prompting
 
 Youtube occasionally surveys users to rate videos in their feed, with a follow-on question to explain why they gave that rating:
 
-![Youtube Survey](/assets/images/interfaces-for-ml7.png)
+![Youtube Survey](/assets/images/interfaces-for-ml8.png)
 
 This is a great survey because of how unobtrusive it is: a user can simply ignore it if they aren't in the mood to give feedback, but if you are, they layer on the questions to generate additional signal. 
 
 Similarly, Fortnite surveys players after a match to see what they think of recent changes to the game:
 
-![Fortnite Survey](/assets/images/interfaces-for-ml8.png)
+![Fortnite Survey](/assets/images/interfaces-for-ml7.png)
 
 This is a great context to ask players about changes: right after they've experienced them.
 
