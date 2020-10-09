@@ -3,7 +3,7 @@ layout: default
 ---
 <article itemscope itemtype="http://schema.org/BlogPosting">
     <header>
-        <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+        <h1 itemprop="name">{{ page.title | escape }}</h1>
         <time class="color-text--secondary text-transform--uppercase" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
             {%- assign date_format = "%B %Y" -%}
             {{ page.date | date: date_format }}

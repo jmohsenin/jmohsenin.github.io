@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<article itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+        <h2 itemprop="name headline">{{ page.title | escape }}</h1>
+    </header>
+
+    <div itemprop="articleBody">
+        {{ content }}
+    </div>
+
+    {%- include backlinks.html -%}
+</article>

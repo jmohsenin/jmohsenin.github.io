@@ -31,6 +31,11 @@ twitter:
 
 permalink: /:title
 
+collections:
+  notes:
+    output: true
+
+
 # Build settings
 plugins:
   - jekyll-seo-tag
