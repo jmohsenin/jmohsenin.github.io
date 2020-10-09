@@ -13,11 +13,11 @@ One of the most effective yet under-utilized methods of speeding up product deve
 - **Smaller batches reduce overhead**: less management is needed of smaller batches. If a new feature has 10 open bugs, a new bug reports needs to be checked for duplication 10 times. If a new feature has 100 open bugs, it needs to be checked 100 times.
 - **Smaller batches are easier to cancel**: priorities change, conflict, or turn out to be incorrect. Smaller batches are easier to cancel because there is less a sunk cost, and a lower chance that priorities have changed since the batch started.
   
-There are numerous second-order benefits to reducing batch size:
+There are second-order benefits to reducing batch size:
 - **Smaller batches reduces process friction**: smaller batches will hit friction in shipping processes (e.g. “how many people need to get sign off on a copy change?") much more frequently than larger batches, so fixing that friction will become higher priority. 
 - **Smaller batches encourage more urgency**: a designer soley responsible for a tweak to the site header due three days from now is going to feel a lot more urgency than if they were part of a team of five responsible for a site navigation refresh due in three months.
 - **Smaller batches encourage more experimentation**: because the risks of small batches are lower, experimenting with potentially risky changes becomes easier.
 - **Smaller batches are more fun**: a lot of people derive joy out of shipping work, and smaller batches means more of those moments.
 
 ### References
-[Principles of Product Development Flow](https://www.amazon.com/Principles-Product-Development-Flow-Generation/dp/1935401009) by Donald G. Reinersten
+[Principles of Product Development Flow](https://www.amazon.com/Principles-Product-Development-Flow-Generation/dp/1935401009) by Donald G. Reinertsen
