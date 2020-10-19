@@ -203,3 +203,8 @@ footer {
     border-radius: 50px;
     margin-right: var(--spacing-l);
 }
+
+.pizza-photo {
+    width: 250px;
+    height: 250px;
+}
