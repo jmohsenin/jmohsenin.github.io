@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<div class="margin-bottom--l">
 <p>Hi I’m Jackson Mohsenin, a software designer based in San Francisco. A lot of folks call me JMO.</p>
 
 <p>I recently spent six years designing at Quora, where I got to integrate design and code in a day-to-day role,
@@ -15,29 +16,31 @@ layout: default
         href="https://twitter.com/jmohsenin">@jmohsenin</a> • 
     <a class="color--inherit text-transform--uppercase"
         href="mailto:jmohsenin@gmail.com">jmohsenin@gmail.com</a></p>
-
-{%- if site.posts.size > 0 -%}
-<div class="post-list">
-    {%- for post in site.posts -%}
-    <div class="post-list-item">
-        <h3><a class="color-text--primary" href="{{ post.url | relative_url }}">
-                {{ post.title | escape }}
-            </a></h3>
-        {{ post.description }}
-    </div>
-    {%- endfor -%}
-    <!-- <div class="post-list-item">
-        <h3 class="color-text--secondary">
-            Interfaces That Help Machine Learning
-        </h3>
-        Coming soon!
-    </div> -->
-    <div class="post-list-item">
-        <h3><a class="color-text--primary"
-                href="https://www.quora.com/q/quoradesign/Snapchat-and-the-Myth-of-Unintuitive-Design">
-                Snapchat and the Myth of Unintuitive Design
-            </a></h3>
-        Debunking the myth that Snapchat's hard-to-discover UX was a key part of their success.
-    </div>
 </div>
-{%- endif -%}
+<div class="margin-bottom--l">
+    <h2>Favorites</h2>
+    {% assign featured_posts = site.posts | where: "featured", true %}
+    {% for post in featured_posts  %}
+        <div>
+            <h3><a class="color-text--primary" href="{{ post.url | relative_url }}">
+                    {{ post.title | escape }}
+                </a></h3>
+            {{ post.description }}
+        </div>
+    {% endfor %}
+</div>
+<div class="margin-bottom--l">
+    <h2>Recent Posts</h2>
+    {% for post in site.posts limit:3 %}
+        <div>
+            <h3><a class="color-text--primary" href="{{ post.url | relative_url }}">
+                    {{ post.title | escape }}
+                </a></h3>
+            {% assign date_format = "%B %e, %Y" %}
+            {{ post.date | date: date_format }}
+        </div>
+    {% endfor %}
+</div>
+<div class="margin-bottom--l">
+    <a class="more-link" href={% link posts.html %}>All Posts <span class="link-arrow">→</span></a>
+</div>

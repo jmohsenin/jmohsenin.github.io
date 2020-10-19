@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "The Algorithm Isn't Everything: TikTok's Virtuous Cycle"
+title: "The algorithm isn't everything: TikTok's virtuous cycle"
 description: "How TikTok’s product design, growth strategy, and algorithm compound to form strong network effects."
-date:   2020-09-20 19:06:07 -0700
+date: 2020-09-20 19:06:07 -0700
 image: /assets/images/tiktok-cycle.png?1
+featured: true
 ---
 TikTok's algorithm must have the best PR in all of tech: a prevalent view is that it's the singular magic behind TikTok's success:
 
@@ -13,7 +14,9 @@ With the news that the TikTok/Oracle [won't include the algorithm](https://www.s
 
 If network effects are what keeps TikTok on top today, is the algorithm responsible for getting TikTok here in the first place? The answer is a lot more complex than that.
 
-## TikTok's Virtuous Cycle
+<!--break-->
+
+### TikTok's Virtuous Cycle
 
 To understand TikTok's strategy, Michael Porter's framework is a useful guide. In his seminal ["What Is Strategy?" paper](https://hbr.org/1996/11/what-is-strategy) ([non-paywall slide summary](https://www.slideshare.net/hitnrun10/what-is-strategy-30278968)), he laid out a framework for what defines a successful strategy:
 
@@ -44,7 +47,7 @@ The compounding strength of this strategy is made crystal clear when you conside
 
 This is a strong strategy, but critically, *this needs a certain amount of scale to work.* When TikTok was much smaller, many of these effects were much weaker. Fewer creators leads to fewer videos to choose from, making TikTok less engaging to consumers. Fewer consumers leads to a smaller potential audience, making it less enticing for creators. How do you solve for this and get to scale quickly, in a landscape as saturated as consumer internet? Paid acquisition. TikTok spent $1b on it throughout 2018 alone, becoming [the second-most downloaded app in 2019](https://sensortower.com/blog/tiktok-revenue-downloads-2019), [topping 2 billion downloads by April 2020](https://sensortower.com/blog/tiktok-downloads-2-billion), and recently announcing they have [100 million MAUs in the US alone, 50% of those DAUs](https://www.cnbc.com/2020/08/24/tiktok-reveals-us-global-user-growth-numbers-for-first-time.html). This is an enormous amount of money to spend on user acquisition and only makes sense if your ARPU exceeds your CAC (unclear for TikTok) and/or you have strong network effects. [With a rumored valuation in the $60 billion range](https://markets.businessinsider.com/news/stocks/bytedance-60-billion-tiktok-global-us-valuation-2020-9-1029606381), it seems that bet paid off.
 
-## What This Means for Facebook
+### What This Means for Facebook
 
 Instagram Reels isn't going to supplant TikTok by simply cloning a few of its key aspects. TikTok's activities require tradeoffs that Instagram might not be ready to make. Pushing Instagram creators to make Reels comes at the cost of other content they could make. Pushing Reels in the Home and Explore feeds siphons off consumer attention that would otherwise go to the rest of Instagram. The resulting signals are much messier given the different and competing goals within Instagram, making it harder to train a great algorithm.
 

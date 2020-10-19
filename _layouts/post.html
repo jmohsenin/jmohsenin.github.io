@@ -4,8 +4,8 @@ layout: default
 <article itemscope itemtype="http://schema.org/BlogPosting">
     <header>
         <h1 itemprop="name">{{ page.title | escape }}</h1>
-        <time class="color-text--secondary text-transform--uppercase" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-            {%- assign date_format = "%B %Y" -%}
+        <time itemprop="datePublished" class="color-text--secondary text-transform--uppercase" datetime="{{ page.date | date_to_xmlschema }}">
+            {% assign date_format = "%B %e, %Y" %}
             {{ page.date | date: date_format }}
         </time>
     </header>
@@ -14,5 +14,5 @@ layout: default
         {{ content }}
     </div>
 
-    {%- include footer.html -%}
+    {% include footer.html %}
 </article>

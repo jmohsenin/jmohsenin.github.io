@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<h1>Pizza Log</h1>
+<div class="border--bottom padding-bottom--l margin-bottom--l">
+    <div class="margin-bottom--m">
+        I like to make pizza. Here's a lot of all the pizzas I've ever made.
+    </div>
+    <div class="color-text--secondary text-transform--uppercase">
+        {% assign pizza_count = 0 %}
+        {% for pizza in site.pizzas %}
+            {% assign pizza_count = pizza_count | plus: pizza.pies %}
+        {% endfor %}
+        Total pizza count: {{ pizza_count }}
+    </div>
+</div>
+
+<div class="pizza-list">
+    {% assign pizzas = site.pizzas | sort: 'date' | reverse %}
+    {% for pizza in pizzas %}
+        {% assign date_format = "%Y-%m-%d" %}
+        <div class="padding-top--l margin-bottom--l" id="{{ pizza.date | date: date_format }}">
+            {% if pizza.images %}
+                <div class="pizza-photos-container margin-bottom--m">
+                    {% for image in pizza.images %}
+                        <picture>
+                            <source srcset="{{ image }}.webp 1x, {{ image }}@2x.webp 2x" type="image/webp">
+                            <source srcset="{{ image }}.jpg 1x, {{ image }}@2x.jpg 2x" type="image/jpg">
+                            <img loading="lazy" src="{{ image }}@2x.jpg" class="pizza-photo"/>
+                        </picture>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            <a class="color-text--primary font-weight--bold" href="#{{ pizza.date | date: date_format }}">
+                <time>
+                    {{ pizza.date | date: date_format }}
+                </time>
+            </a>
+            {{ pizza.content }}
+        </div>
+    {% endfor %}
+</div>

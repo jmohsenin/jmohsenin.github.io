@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  {%- seo -%}
+  {% seo %}
 
   <link rel="stylesheet" href="{{ "/assets/css/normalize.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
@@ -11,7 +11,7 @@
 
   <meta name="theme-color" content="#FFFDF2">
 
-  {%- if jekyll.environment == 'production' -%}
+  {% if jekyll.environment == 'production' %}
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39151945-4"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -20,5 +20,5 @@
 
       gtag('config', 'UA-39151945-4');
     </script>
-  {%- endif -%}
+  {% endif %}
 </head>

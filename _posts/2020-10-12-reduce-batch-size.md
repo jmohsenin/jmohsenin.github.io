@@ -1,6 +1,7 @@
 ---
-layout: note
-title:  "Reduce batch size"
+layout: post
+title: "Reduce batch size"
+date: 2020-10-12 10:00:00 -0700
 ---
 
 One of the most effective yet under-utilized methods of speeding up product development is to reduce batch size. A batch is a completed unit of work, and batch size is the total amount of work in the batch. 
@@ -13,7 +14,7 @@ One of the most effective yet under-utilized methods of speeding up product deve
 - **Smaller batches reduce overhead**: less management is needed for smaller batches. If a new feature has 10 open bugs, a new bug report needs to be checked for duplication 10 times. If a new feature has 100 open bugs, it needs to be checked 100 times.
 - **Smaller batches are easier to cancel**: often priorities change, conflict with each other, or are sometimes flat-out wrong. Smaller batches are easier to cancel because there is less a sunk cost and a lower chance that priorities have changed since the batch started.
 
-  
+<!--break-->
 There are second-order benefits to reducing batch size:
 - **Smaller batches reduce process friction**: smaller batches will hit friction in shipping processes (e.g. “how many people need to get sign off on a copy change?") much more frequently than larger batches, so fixing that friction will become a higher priority. 
 - **Smaller batches encourage more urgency**: a designer solely responsible for a tweak to the site header due three days from now is going to feel a lot more urgency than if they were part of a team of five responsible for a site navigation refresh due in three months.

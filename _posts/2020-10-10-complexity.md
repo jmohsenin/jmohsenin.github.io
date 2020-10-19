@@ -1,8 +1,12 @@
 ---
-layout: note
-title:  "Complexity can’t be removed, only be moved around"
+layout: post
+title: "Complexity can’t be removed, only moved around"
+date: 2020-10-10 10:00:00 -0700
+
 ---
 A frequent goal in product design is to try and “make it simple”, which often manifests as removing product complexity for the end-user (e.g. removing steps from a flow). This may seem like it’s *removing* complexity, but in practice it’s usually *moving* the complexity to a different place – either onto the system, the organization that runs that system, other users, etc. Moving that complexity can still be the right decision, but it’s important to recognize that it’s not being removed altogether: it’s just somewhere else, with different tradeoffs that might be better or worse depending on the context.
+
+<!--break-->
 
 Some real examples I’ve come across:
 - **Moving complexity from the user to the organization**: replacing billing/shipping address fields with an address autocomplete. That typeahead needed to be built, monitored and had various fallbacks designed for when the service went down. This was complexity the engineering team had to permanently manage.

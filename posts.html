@@ -1,0 +1,26 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+---
+<h1>All Posts</h1>
+{% for post in site.posts %}
+    <article itemscope itemtype="http://schema.org/BlogPosting" class="padding-bottom--l margin-bottom--l {% if forloop.last == false %}border--bottom{% endif %}">
+        <h2 itemprop="name" class="margin-bottom--s"><a class="color-text--primary" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+        </a></h2>
+        <time itemprop="datePublished" class="color-text--secondary text-transform--uppercase" datetime="{{ post.date | date_to_xmlschema }}">
+            {% assign date_format = "%B %e, %Y" %}
+            {{ post.date | date: date_format }}
+        </time>
+
+        <div itemprop="articleBody">
+            {{ post.content | split:'<!--break-->' | first }}
+        </div>
+
+        {% if post.content contains '<!--break-->' %}
+            <a class="more-link" href="{{ post.url }}">Continue Reading <span class="link-arrow">→</span></a>
+        {% endif %}
+    </article>
+{% endfor %}
