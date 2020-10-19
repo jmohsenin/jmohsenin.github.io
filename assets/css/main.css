@@ -83,13 +83,7 @@ blockquote {
 h1, h2, h3 {
     font-family: var(--font-serif);
     letter-spacing: 0em;
-}
-
-/* Nasty little hack to get type looking a little better on mobile Safari */
-@supports (-webkit-touch-callout: none) {
-    h1, h2, h3 {
-        letter-spacing: -0.03em;
-    }
+    font-weight: 500;
 }
 
 h1 {
