@@ -15,9 +15,9 @@ Some real examples I’ve come across:
 
 In all these cases, the tradeoff was ‘worth it’ – it was better to have that complexity moved to a different place. But it wasn’t removed.
 
-What about removing a feature entirely? Isn’t that complexity reduction? Not really: users have [[Jobs To Be Done]], so not having a feature at all usually just pushes that complexity further onto the user:
+What about removing a feature entirely? Isn’t that complexity reduction? Not really: users have [Jobs To Be Done](https://hbr.org/2016/09/know-your-customers-jobs-to-be-done), so not having a feature at all usually just pushes that complexity further onto the user:
 - They may have to spend time hacking together a solution in your product using other features
 - They may have to use another product in addition to yours
 - They may have to hold that complexity in their head, or otherwise forget it and potentially cause them harm.
 
-Importantly, complexity and friction aren’t the same, and friction definitely can be removed: performance improvements, preloading content, auto-focusing text boxes, etc. all remove friction but don’t remove complexity. I don’t quite know when complexity ends and friction begins; it’s a spectrum in my mind.
+Importantly, complexity isn't the same as friction, and friction definitely can be removed: performance improvements, preloading content, auto-focusing text boxes, etc. all remove friction but don’t remove complexity. I don’t quite know when complexity ends and friction begins; it’s a spectrum in my mind.

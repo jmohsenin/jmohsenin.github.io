@@ -236,7 +236,7 @@ a:hover .link-arrow {
 footer {
     border-top: 1px solid var(--color-border);
     padding: var(--spacing-xl) 0;
-    margin-top: var(--spacing-xl);
+    margin-top: var(--spacing-l);
     display: flex;
 }
 

@@ -10,7 +10,7 @@ layout: default
         {{ content }}
     </div>
 
-    <div class="color-text--secondary">
+    <div class="color-text--secondary margin-top--l">
         <div><time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">
             {% assign date_format = "%B %e, %Y" %}
             Published: {{ page.created | date: date_format }}

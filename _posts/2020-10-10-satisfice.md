@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Users will satisfice"
-description: "Balancing a systems-design mindset with a user's mindset"
+description: "Balancing a systems-design mindset with a user's mindset."
 created: 2020-10-10 10:00:00 -0700
 ---
 Satisficing is a decision-making strategy where you choose the first option that meets your criteria, rather than reviewing all the options available to you, e.g. ordering from the first restaurant that looks good versus checking out everything that’s open. In software, satisficing is common: tapping on the first link, tab, or action that seems like it’ll accomplish your goal rather than taking the time to learn all the things a product can do.
