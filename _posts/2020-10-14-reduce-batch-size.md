@@ -1,7 +1,9 @@
 ---
 layout: post
 title: "The surprising impact of reducing batch size"
-date: 2020-10-12 10:00:00 -0700
+description: Shipping smaller chunks of work has more benefits than you probably realize.
+created: 2020-10-14 10:00:00 -0700
+updated: 2020-10-25 10:00:00 -0700
 ---
 
 "Ship fast" is among the oldest and most common pieces of software wisdom, getting repackaged over the years into Agile, the Lean Startup Method, or _move fast and break things_. It's advice so trite that doesn't even seem worth discussing, but I've been continually surprised at just how impactful it can be, specifically when you focus on reducing batch size.

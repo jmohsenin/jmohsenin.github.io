@@ -2,7 +2,8 @@
 layout: post
 title: "Snapchat and the myth of unintuitive design"
 description: "Debunking the myth that Snapchat's hard-to-discover UX was a key part of their success."
-date: 2016-12-07 10:00:00 -0700
+created: 2016-12-07 10:00:00 -0700
+updated: 2020-10-06 10:00:00 -0700
 featured: true
 ---
 This week, an idea that's circulated in the design community for the last couple of years has come back into play: that non-intuitive, primarily gesture-based interfaces have been key to Snapchat's success and moreover constitute good design. From [Intuitive Design vs Shareable Design](https://news.greylock.com/intuitive-design-vs-shareable-design-88ff6bb184bb) by Josh Elman:
@@ -42,3 +43,6 @@ I think the path forward is more research into understanding how users – and j
 - [The Distribution of Users’ Computer Skills: Worse Than You Think](https://www.nngroup.com/articles/computer-skill-levels/)
 - [Instagram Today: 500 Million Windows to the World](https://business.instagram.com/blog/500-million-windows-to-the-world)
 - [Snapchat's Spiegel to Investors: We Have 8 Billion Video Views a Day](https://www.bloomberg.com/news/articles/2016-02-29/snapchat-s-spiegel-to-investors-we-have-8-billion-video-views-a-day)
+
+
+_This post was originally published to the [Quora Design Blog](https://www.quora.com/q/quoradesign/Snapchat-and-the-Myth-of-Unintuitive-Design)._

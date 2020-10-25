@@ -36,8 +36,7 @@ layout: default
             <h3><a class="color-text--primary" href="{{ post.url | relative_url }}">
                     {{ post.title | escape }}
                 </a></h3>
-            {% assign date_format = "%B %e, %Y" %}
-            {{ post.date | date: date_format }}
+            {{ post.description }}
         </div>
     {% endfor %}
 </div>

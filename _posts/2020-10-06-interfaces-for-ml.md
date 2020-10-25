@@ -2,7 +2,8 @@
 layout: post
 title: "Interfaces that help machine learning"
 description: "Analyzing design patterns that help ML collect signal."
-date: 2020-10-06 10:00:00 -0700
+created: 2020-10-06 10:00:00 -0700
+updated: 
 image: /assets/images/interfaces-for-ml-cover.png
 featured: true
 ---

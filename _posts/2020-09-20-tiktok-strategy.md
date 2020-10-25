@@ -2,7 +2,7 @@
 layout: post
 title: "The algorithm isn't everything: TikTok's virtuous cycle"
 description: "How TikTok’s product design, growth strategy, and algorithm compound to form strong network effects."
-date: 2020-09-20 19:06:07 -0700
+created: 2020-09-20 19:06:07 -0700
 image: /assets/images/tiktok-cycle.png?1
 featured: true
 ---
