@@ -251,7 +251,14 @@ footer {
     display: flex;
     position: relative;
     overflow-x: scroll;
+    overflow-y: hidden;
     line-height: 0;
+    margin: 0 calc(var(--spacing-l) * -1) var(--spacing-m);
+    padding-left: var(--spacing-l);
+}
+
+.pizza-photos-container::-webkit-scrollbar {
+    display: none;
 }
 
 .pizza-photo {
