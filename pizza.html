@@ -19,7 +19,7 @@ layout: default
     {% assign pizzas = site.pizzas | sort: 'date' | reverse %}
     {% for pizza in pizzas %}
         {% assign date_format = "%Y-%m-%d" %}
-        <div class="padding-top--l margin-bottom--l" id="{{ pizza.date | date: date_format }}">
+        <div class="padding-top--l" id="{{ pizza.date | date: date_format }}">
             {% if pizza.images %}
                 <div class="pizza-photos-container">
                     {% for image in pizza.images %}

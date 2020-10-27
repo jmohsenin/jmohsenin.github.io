@@ -23,6 +23,7 @@
     --spacing-xl: 64px;
 
     --container-width: 660px;
+    --container-margin: calc(var(--spacing-s) + var(--spacing-m));
 }
 
 @media (prefers-color-scheme: dark) {
@@ -191,7 +192,7 @@ a:hover .link-arrow {
 .container {
     margin: 0 auto;
     box-sizing: border-box;
-    padding: var(--spacing-m) calc(var(--spacing-m) + var(--spacing-s));
+    padding: var(--spacing-m) var(--container-margin);
 }
 
 @media only screen and (min-width: 692px) {
@@ -253,8 +254,8 @@ footer {
     overflow-x: scroll;
     overflow-y: hidden;
     line-height: 0;
-    margin: 0 calc(var(--spacing-l) * -1) var(--spacing-m);
-    padding-left: var(--spacing-l);
+    margin: 0 calc(var(--container-margin) * -1) var(--spacing-m);
+    padding-left: var(--container-margin);
 }
 
 .pizza-photos-container::-webkit-scrollbar {
@@ -265,5 +266,4 @@ footer {
     width: 250px;
     height: 250px;
     margin-right: var(--spacing-m);
-    border-radius: 10px;;
 }
