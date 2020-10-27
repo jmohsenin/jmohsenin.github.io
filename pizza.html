@@ -2,16 +2,16 @@
 layout: default
 ---
 <h1>Pizza Log</h1>
-<div class="border--bottom padding-bottom--l margin-bottom--l">
+<div class="color-text--secondary text-transform--uppercase margin-bottom--m">
+    {% assign pizza_count = 0 %}
+    {% for pizza in site.pizzas %}
+        {% assign pizza_count = pizza_count | plus: pizza.pies %}
+    {% endfor %}
+    Total Pies: {{ pizza_count }}
+</div>
+<div class="border--bottom padding-bottom--l margin-bottom--m">
     <div class="margin-bottom--m">
         I like to make pizza. Here's a lot of all the pizzas I've ever made.
-    </div>
-    <div class="color-text--secondary text-transform--uppercase">
-        {% assign pizza_count = 0 %}
-        {% for pizza in site.pizzas %}
-            {% assign pizza_count = pizza_count | plus: pizza.pies %}
-        {% endfor %}
-        Total pizza count: {{ pizza_count }}
     </div>
 </div>
 
