@@ -8,11 +8,16 @@
 
 :root {
     --color-bg: #FFFDF2;
+    --color-bg--dark: #27261F;
     --color-accent: #487334;
+    --color-accent--dark: #5F9945;
     --color-tap-highlight: rgba(72, 115, 52, .1); 
     --color-text-primary: #393939;
+    --color-text-primary--dark: #E3E1D4;
     --color-text-secondary: #7F7E79;
+    --color-text-secondary--dark: #939188;
     --color-border: #E5E3DA;
+    --color-border--dark: #5D5C54;
 
     --font-serif: 'Bookmania-Semibold', 'Georgia', serif;
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
@@ -29,11 +34,11 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-bg: #27261F;
-        --color-accent: #5F9945;
-        --color-text-primary: #E3E1D4;
-        --color-text-secondary: #939188;
-        --color-border: #5D5C54;
+        --color-bg: var(--color-bg--dark);
+        --color-accent: var(--color-accent--dark);
+        --color-text-primary: var(--color-text-primary--dark);
+        --color-text-secondary: var(--color-text-secondary--dark);
+        --color-border: var(--coloar-border--drk);
     }
 }
 
@@ -79,6 +84,11 @@ blockquote {
     padding-inline-start: var(--spacing-l);
     padding-inline-end: var(--spacing-l);
     border-left: 3px solid var(--color-border);
+}
+
+hr {
+    width: 22vw;
+    border-color: var(--color-border--dark); /* Used only on pizza log, so OK for now */
 }
 
 /* Type */ 
@@ -135,54 +145,32 @@ h4 {
     font-weight: bold;;
 }
 
-.display-inline--block {
-    display: inline-block;
-}
-
-.align-self--center {
-    align-self: center;
+.display--block {
+    display: blockblock;
 }
 
 .line-height--0 {
     line-height: 0;
 }
 
+.cursor--zoom-in {
+    cursor: zoom-in;
+}
+
 .border--bottom {
     border-bottom: 1px solid var(--color-border);
 }
 
-.padding-top--l {
-    padding-top: var(--spacing-l);
+.flex-spaced-centered {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hidden {
+    display: none !important;
 }
 
-.margin-bottom--s {
-    margin-bottom: var(--spacing-s);
-}
-
-.margin-bottom--m {
-    margin-bottom: var(--spacing-m);
-}
-
-.margin-bottom--l {
-    margin-bottom: var(--spacing-l);
-}
-
-.margin-bottom--xl {
-    margin-bottom: var(--spacing-xl);
-}
-
-.padding-bottom--l {
-    padding-bottom: var(--spacing-l);
-}
-
-.padding-bottom--xl {
-    padding-bottom: var(--spacing-xl);
-}
-
-/* Element-specific */ 
-/* ----------------------------------------------------- */
-
-.more-link {
+.link-with-spacing {
     padding: var(--spacing-m);
     margin-left: calc(var(--spacing-m) * -1)
 }
@@ -196,6 +184,36 @@ a:hover .link-arrow {
     transform: translateX(3px);
 }
 
+.margin-top--xs { margin-top: var(--spacing-xs); }
+.margin-top--s { margin-top: var(--spacing-s); }
+.margin-top--m { margin-top: var(--spacing-m); }
+.margin-top--l { margin-top: var(--spacing-l); }
+.margin-top--xl { margin-top: var(--spacing-xl); }
+
+.margin-bottom--xs { margin-bottom: var(--spacing-xs); }
+.margin-bottom--s { margin-bottom: var(--spacing-s); }
+.margin-bottom--m { margin-bottom: var(--spacing-m); }
+.margin-bottom--l { margin-bottom: var(--spacing-l); }
+.margin-bottom--xl { margin-bottom: var(--spacing-xl); }
+
+.padding-top--xs { padding-top: var(--spacing-xs); }
+.padding-top--s { padding-top: var(--spacing-s); }
+.padding-top--m { padding-top: var(--spacing-m); }
+.padding-top--l { padding-top: var(--spacing-l); }
+.padding-top--xl { padding-top: var(--spacing-xl); }
+
+.padding-bottom--xs { padding-bottom: var(--spacing-xs); }
+.padding-bottom--s { padding-bottom: var(--spacing-s); }
+.padding-bottom--m { padding-bottom: var(--spacing-m); }
+.padding-bottom--l { padding-bottom: var(--spacing-l); }
+.padding-bottom--xl { padding-bottom: var(--spacing-xl); }
+
+.margin-right--nm { margin-right: calc(var(--spacing-m) * -1); }
+
+
+/* Element-specific */ 
+/* ----------------------------------------------------- */
+
 .container {
     margin: 0 auto;
     box-sizing: border-box;
@@ -206,16 +224,6 @@ a:hover .link-arrow {
     .container {
         width: calc(var(--container-width) + var(--spacing-l));
     }
-}
-
-.header {
-    margin: var(--spacing-m) 0 var(--spacing-l);
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-home {
-    margin-top: var(--spacing-l);
 }
 
 .logo {
@@ -248,8 +256,6 @@ a:hover .link-arrow {
 
 footer {
     border-top: 1px solid var(--color-border);
-    padding: var(--spacing-xl) 0;
-    margin-top: var(--spacing-l);
     display: flex;
 }
 
@@ -260,27 +266,105 @@ footer {
     margin-right: var(--spacing-l);
 }
 
-.pizza-photos-container {
-    display: flex;
-    position: relative;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    line-height: 0;
-    margin: 0 calc(var(--container-margin) * -1) var(--spacing-m);
-    padding-left: var(--container-margin);
+/* Pizza Log */ 
+/* ----------------------------------------------------- */
+
+.pizza-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
 }
 
-.pizza-photos-container::-webkit-scrollbar {
+@media only screen and (max-width: 692px) {
+    .pizza-gallery {
+        margin: 0 calc(var(--container-margin) * -1);
+    }
+}
+
+.pizza-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--color-bg--dark);
+    color: var(--color-text-primary--dark);
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.pizza-overlay a {
+    color: var(--color-text-primary--dark);
+}
+
+.close-button {
+    position: fixed;
+    top: var(--spacing-m);
+    left: var(--spacing-m);
+    background: rgba(39, 38, 31, 0.9);
+    font-size: 40px;
+    height: 50px;
+    width: 50px;
+    display: block;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+.close-button:hover {
+    color: var(--color-text-secondary--dark);
+}
+
+.pizza-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow-y: hidden;
+    margin: 0 auto var(--spacing-m);
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    max-width: var(--container-width);
+}
+
+.pizza-carousel::-webkit-scrollbar {
     display: none;
 }
 
-.pizza-photos-container-homepage {
-    margin-top: var(--spacing-l);
-    margin-bottom: var(--spacing-l);
+.pizza-carousel-photo {
+    min-width: 100%;
+    width: 100%;
+    scroll-snap-align: start;
 }
 
-.pizza-photo {
-    width: 250px;
-    height: 250px;
-    margin-right: var(--spacing-m);
+.indicator {
+    display: flex;
+}
+
+.indicator-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-text-secondary--dark);
+    border-radius: 3px;
+    margin-right: var(--spacing-xs);
+}
+
+.indicator-dot--active {
+    background-color: var(--color-accent--dark);
+}
+
+.pizza-text {
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 var(--container-margin);
+}
+
+@media only screen and (min-width: 692px) {
+    .pizza-text {
+        width: var(--container-width);
+        padding: 0;
+    }
 }

@@ -1,43 +1,78 @@
 ---
 layout: default
+script: "/assets/js/pizza.js"
 ---
-<h1>Pizza Log</h1>
-<div class="color-text--secondary text-transform--uppercase margin-bottom--m">
-    {% assign pizza_count = 0 %}
-    {% for pizza in site.pizzas %}
+<div class="margin-bottom--l">
+    <h1>Pizzas</h1>
+    <div class="color-text--secondary text-transform--uppercase margin-bottom--m">
+        {% assign pizza_count = 0 %}
+        {% for pizza in site.pizzas %}
         {% assign pizza_count = pizza_count | plus: pizza.pies %}
-    {% endfor %}
-    Total Pies: {{ pizza_count }}
+        {% endfor %}
+        Total Pies: {{ pizza_count }}
+    </div>
+    <p>
+        I love making pizza. Since getting a <a href="https://ooni.com/products/ooni-koda">city-friendly pizza oven</a>
+        I've been making about a dozen pies a month and taking notes along the way. I have a long way to go but I'm
+        pretty happy with progress so far.
+    </p>
+    <p>Inspiration comes from my favorite pizza spots in SF (<a href="http://www.thepizzahacker.com/">Pizzahacker</a>,
+        <a href="https://www.flourandwaterpizzeria.com/">Flour+Water</a>,
+        <a href="https://piccino.com/">Piccino</a>) and the world (<a href="http://www.pizzeriabianco.com/">Pizzeria
+            Bianco</a>, <a href="http://www.unapizza.com/">Una Pizza Napoletana</a>, <a
+            href="https://www.pizzeriabeddia.com/">Pizzeria Beddia</a>).</p>
 </div>
-<p class="border--bottom padding-bottom--l margin-bottom--s">
-        I love making pizza. Since 2019 I've been keeping a log of all the pies I made, along with notes of 
-        what to improve in the future. My pizza's much better <a href="#2019-03-30">since I started</a>, 
-        but I've still got a long way to go to <a href="https://www.pizzeriabeddia.com/">reach</a> 
-        <a href="http://www.pizzeriabianco.com/">pizza</a> <a href="http://www.unapizza.com/">nirvana</a>.
-</p>
 
-<div class="pizza-list">
-    {% assign pizzas = site.pizzas | sort: 'date' | reverse %}
+{% assign pizzas = site.pizzas | sort: 'date' | reverse %}
+
+<div class="pizza-gallery">
     {% for pizza in pizzas %}
-        {% assign date_format = "%Y-%m-%d" %}
-        <div class="padding-top--l" id="{{ pizza.date | date: date_format }}">
-            {% if pizza.images %}
-                <div class="pizza-photos-container">
-                    {% for image in pizza.images %}
-                        <picture>
-                            <source srcset="{{ image }}.webp 1x, {{ image }}@2x.webp 2x" type="image/webp">
-                            <source srcset="{{ image }}.jpg 1x, {{ image }}@2x.jpg 2x" type="image/jpg">
-                            <img loading="lazy" src="{{ image }}@2x.jpg" class="pizza-photo"/>
-                        </picture>
-                    {% endfor %}
-                </div>
-            {% endif %}
-            <a class="color-text--primary font-weight--bold" href="#{{ pizza.date | date: date_format }}">
-                <time>
-                    {{ pizza.date | date: date_format }}
-                </time>
-            </a>
-            {{ pizza.content }}
-        </div>
+    {% for image in pizza.images %}
+    {% assign image_id = image | split: "/" | last %}
+    <picture data-id="{{ image_id }}" class="pizza-gallery-photo line-height--0 cursor--zoom-in">
+        <source srcset="{{ image }}@thumb.webp" type="image/webp">
+        <img loading="lazy" src="{{ image }}@thumb" />
+    </picture>
     {% endfor %}
+    {% endfor %}
+</div>
+
+<div class="pizza-overlay hidden">
+    <a href="#" class="close-button">×</a>
+    <div class="pizza-list">
+        {% for pizza in pizzas %}
+        {% assign date_format = "%Y-%m-%d" %}
+        <div id="{{ pizza.date | date: date_format }}" class="margin-bottom--xl">
+            {% if pizza.images %}
+            <div class="pizza-carousel">
+                {% for image in pizza.images %}
+                {% assign image_id = image | split: "/" | last %}
+                <picture id={{ image_id }} class="pizza-carousel-photo line-height--0">
+                    <source srcset="{{ image }}@thumb.webp 320w, {{ image }}.webp" type="image/webp">
+                    <source srcset="{{ image }}@thumb.jpg 320w, {{ image }}.jpg" type="image/jpg">
+                    <img loading="lazy" src="{{ image }}.jpg" />
+                </picture>
+                {% endfor %}
+            </div>
+            {% endif %}
+            <div class="pizza-text">
+                <div class="flex-spaced-centered">
+                    <a class="font-weight--bold" href="#{{ pizza.date | date: date_format }}">
+                        <time>
+                            {{ pizza.date | date: date_format }}
+                        </time>
+                    </a>
+                    {% if pizza.images.size > 1 %}
+                    <div class="indicator">
+                        {% for image in pizza.images %}
+                        <div class="indicator-dot {% if forloop.first == true %}indicator-dot--active{% endif %}"></div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+                {{ pizza.content }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>

@@ -11,6 +11,11 @@
 
   <meta name="theme-color" content="#FFFDF2">
 
+  
+  {% if include.script %}
+    <script src={{ include.script }}></script>
+  {% endif %}
+
   {% if jekyll.environment == 'production' %}
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39151945-4"></script>
     <script>
