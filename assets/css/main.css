@@ -9,6 +9,7 @@
 :root {
     --color-bg: #FFFDF2;
     --color-accent: #487334;
+    --color-tap-highlight: rgba(72, 115, 52, .1); 
     --color-text-primary: #393939;
     --color-text-secondary: #7F7E79;
     --color-border: #E5E3DA;
@@ -48,6 +49,7 @@ body {
     -webkit-font-smoothing: antialiased;
     color: var(--color-text-primary);
     box-sizing: border-box;
+    -webkit-tap-highlight-color: var(--color-tap-highlight);
 }
 
 @media only screen and (min-width: 692px) {
@@ -82,7 +84,7 @@ blockquote {
 /* Type */ 
 /* ----------------------------------------------------- */
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: var(--font-serif);
     letter-spacing: 0em;
     font-weight: 500;
@@ -101,6 +103,11 @@ h2 {
 
 h3 {
     font-size: 1.25em;
+    margin-bottom: var(--spacing-s);
+}
+
+h4 {
+    font-size: 1.15em;
     margin-bottom: var(--spacing-s);
 }
 
@@ -228,6 +235,11 @@ a:hover .link-arrow {
 }
 
 /* Gross but the only way to fit Twitter/Email info on one line on phones */
+@media only screen and (max-width: 320px) {
+    .contact-info {
+        font-size: 0.75em;
+    }
+}
 @media only screen and (max-width: 410px) {
     .contact-info {
         font-size: 0.9em;
@@ -260,6 +272,11 @@ footer {
 
 .pizza-photos-container::-webkit-scrollbar {
     display: none;
+}
+
+.pizza-photos-container-homepage {
+    margin-top: var(--spacing-l);
+    margin-bottom: var(--spacing-l);
 }
 
 .pizza-photo {

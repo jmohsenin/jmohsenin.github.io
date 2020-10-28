@@ -7,8 +7,8 @@ layout: default
 <p>I recently spent six years designing at Quora, where I got to integrate design and code in a day-to-day role,
     drive major parts of company strategy, and manage a wonderful team of designers.</p>
 
-<p>Now I’m tinkering on personal projects, working with early-stage startups on design and strategy, and writing about
-    the interplay between design, machine learning, and social systems.</p>
+<p>Now I’m tinkering on personal projects, working with early-stage startups, writing about design and ML, and
+     <a href={% link pizza.html %}>making pizza.</a></p>
 
 <p>Say hi if you’re interested in working together:</p>
 <p class="color-text--secondary contact-info">
@@ -22,24 +22,43 @@ layout: default
     {% assign featured_posts = site.posts | where: "featured", true %}
     {% for post in featured_posts  %}
         <div>
-            <h3><a class="color-text--primary" href="{{ post.url | relative_url }}">
+            <h4><a class="color-text--primary" href="{{ post.url | relative_url }}">
                     {{ post.title | escape }}
-                </a></h3>
+                </a></h4>
             {{ post.description }}
         </div>
     {% endfor %}
 </div>
-<div class="margin-bottom--l">
+<div class="margin-bottom--xl">
     <h2>Recent Posts</h2>
     {% for post in site.posts limit:3 %}
         <div>
-            <h3><a class="color-text--primary" href="{{ post.url | relative_url }}">
+            <h4><a class="color-text--primary" href="{{ post.url | relative_url }}">
                     {{ post.title | escape }}
-                </a></h3>
+                </a></h4>
             {{ post.description }}
         </div>
     {% endfor %}
+    <div class="padding-top--l">
+        <a class="more-link" href={% link posts.html %}>All Posts <span class="link-arrow">→</span></a>
+    </div>
 </div>
 <div class="margin-bottom--l">
-    <a class="more-link" href={% link posts.html %}>All Posts <span class="link-arrow">→</span></a>
+    <h2>Recent Pizzas</h2>
+    <a href={% link pizza.html %}>
+        {% assign pizza = site.pizzas | where:"id", page.pizza-id | last %}
+        <div class="pizza-photos-container pizza-photos-container-homepage">
+            {% for image in pizza.images %}
+                <picture>
+                    <source srcset="{{ image }}.webp 1x, {{ image }}@2x.webp 2x" type="image/webp">
+                    <source srcset="{{ image }}.jpg 1x, {{ image }}@2x.jpg 2x" type="image/jpg">
+                    <img loading="lazy" src="{{ image }}@2x.jpg" class="pizza-photo"/>
+                </picture>
+            {% endfor %}
+        </div>
+    </a>
+    <div class="margin-top--l">
+        <a class="more-link" href={% link pizza.html %}>All Pizzas <span class="link-arrow">→</span></a>
+    </div>
 </div>
+
