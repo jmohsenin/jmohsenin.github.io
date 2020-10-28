@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Social/UGC products are a uniquely difficult marketplace"
+title: "Social/UGC products are uniquely difficult marketplaces"
 description: "Incentives get tricky when supplier motivations differ."
 created: 2020-10-25 10:00:00 -0700
 ---
