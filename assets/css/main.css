@@ -88,7 +88,9 @@ blockquote {
 
 hr {
     width: 22vw;
-    border-color: var(--color-border--dark); /* Used only on pizza log, so OK for now */
+    border: 0;
+    height: 1px;
+    background: var(--color-border--dark) /* Used only on pizza log, so OK for now */
 }
 
 /* Type */ 
@@ -348,7 +350,7 @@ footer {
     width: 8px;
     height: 8px;
     background-color: var(--color-text-secondary--dark);
-    border-radius: 3px;
+    border-radius: 4px;
     margin-right: var(--spacing-xs);
 }
 
