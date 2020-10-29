@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Jackson Mohsenin
-tagline: Jackson Mohsenin's Personal Website
+tagline: Jackson Mohsenin's Personal Site
 email: jmohsenin@gmail.com
 url: "https://jmohsenin.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -39,6 +39,7 @@ collections:
 # Build settings
 plugins:
   - jekyll-seo-tag
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
