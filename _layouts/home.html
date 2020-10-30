@@ -58,7 +58,7 @@ layout: default
             {% for image in pizza_preview limit: 6 %}
                 <picture class="line-height--0">
                     <source srcset="{{ image }}@thumb.webp" type="image/webp">
-                    <img loading="lazy" src="{{ image }}@thumb" />
+                    <img loading="lazy" src="{{ image }}@thumb.jpg" />
                 </picture>
             {% endfor %}
         </div>
