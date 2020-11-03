@@ -1,0 +1,21 @@
+{
+  "name": "jmohsenin.github.io",
+  "version": "1.0.0",
+  "description": "JS for JMO's personal site",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmohsenin/jmohsenin.github.io.git"
+  },
+  "author": "Jackson Mohsenin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmohsenin/jmohsenin.github.io/issues"
+  },
+  "homepage": "https://github.com/jmohsenin/jmohsenin.github.io#readme",
+  "devDependencies": {
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2"
+  }
+}
