@@ -87,7 +87,7 @@ blockquote {
 }
 
 hr {
-    width: 22vw;
+    width: 33%;
     border: 0;
     height: 1px;
     background: var(--color-border--dark) /* Used only on pizza log, so OK for now */
@@ -304,13 +304,13 @@ footer {
     top: var(--spacing-m);
     left: var(--spacing-m);
     background: rgba(39, 38, 31, 0.9);
-    font-size: 40px;
-    height: 50px;
-    width: 50px;
+    font-size: 32px;
+    height: 44px;
+    width: 44px;
     display: block;
     text-align: center;
-    line-height: 44px;
-    border-radius: 25px;
+    line-height: 40px;
+    border-radius: 22px;
     z-index: 1;
 }
 
