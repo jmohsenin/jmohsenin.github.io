@@ -45,12 +45,14 @@ layout: default
 <div class="margin-bottom--l">
     <h2 class="margin-bottom--m">Pizza</h2>
     <a href={% link pizza.html %}>
-        {% assign pizza_preview = "" | split: "," %}
-        {% for pizza in site.pizzas reversed %}
-        {% for image in pizza.images %}
-        {% assign pizza_preview = pizza_preview | push: image %}
-        {% endfor %}
-        {% endfor %}
+        {% assign pizza_preview = "
+        assets/images/pizzas/2021-01-09--1,
+        assets/images/pizzas/2021-02-14--05,
+        assets/images/pizzas/2020-10-30--1,
+        assets/images/pizzas/2020-10-10--2,
+        assets/images/pizzas/2020-10-03--1,
+        assets/images/pizzas/2020-10-10--4" | split: ","
+        %}
 
         {% assign pizza = site.pizzas | where:"id", page.pizza-id | last %}
         <div class="pizza-gallery margin-bottom--l">
