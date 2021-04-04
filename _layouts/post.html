@@ -3,6 +3,9 @@ layout: default
 ---
 <article itemscope itemtype="http://schema.org/BlogPosting">
     <header>
+        {% if page.image %}
+        <img src={{ page.image }} />
+        {% endif %}
         <h1 itemprop="name">{{ page.title | escape }}</h1>
     </header>
 
@@ -12,16 +15,16 @@ layout: default
 
     <div class="color-text--secondary margin-top--l">
         <div><time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">
-            {% assign date_format = "%B %e, %Y" %}
-            Published: {{ page.created | date: date_format }}
-        </time></div>
+                {% assign date_format = "%B %e, %Y" %}
+                Published: {{ page.created | date: date_format }}
+            </time></div>
         {% if page.updated %}
         <div><time itemprop="dateModified" datetime="{{ page.date | date_to_xmlschema }}">
-            {% assign date_format = "%B %e, %Y" %}
-            Updated: {{ page.updated | date: date_format }}
-        </time></div>
+                {% assign date_format = "%B %e, %Y" %}
+                Updated: {{ page.updated | date: date_format }}
+            </time></div>
         {% endif %}
     </div>
-    
+
     {% include footer.html %}
 </article>
