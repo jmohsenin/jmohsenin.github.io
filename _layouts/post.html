@@ -4,7 +4,12 @@ layout: default
 <article itemscope itemtype="http://schema.org/BlogPosting">
     <header>
         {% if page.image %}
-        <img src={{ page.image }} />
+        <img src={{ page.image }} class="breakout" />
+        {% endif %}
+        {% if page.video %}
+        <video autoplay loop class="breakout">
+            <source src={{ page.video }} type="video/mp4">
+        </video>
         {% endif %}
         <h1 itemprop="name">{{ page.title | escape }}</h1>
     </header>
@@ -14,10 +19,12 @@ layout: default
     </div>
 
     <div class="color-text--secondary margin-top--l">
+        {% if page.created %}
         <div><time itemprop="datePublished" datetime="{{ page.date | date_to_xmlschema }}">
                 {% assign date_format = "%B %e, %Y" %}
                 Published: {{ page.created | date: date_format }}
             </time></div>
+        {% endif %}
         {% if page.updated %}
         <div><time itemprop="dateModified" datetime="{{ page.date | date_to_xmlschema }}">
                 {% assign date_format = "%B %e, %Y" %}

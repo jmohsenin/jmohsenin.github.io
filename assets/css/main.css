@@ -130,6 +130,21 @@ h4 {
   margin: var(--spacing-l) 0 var(--spacing-s);
 }
 
+figure {
+  margin: var(--spacing-l) 0;
+}
+
+figcaption {
+  font-size: 0.75em;
+  color: var(--color-text-secondary);
+  text-align: center;
+  margin-top: var(--spacing-m);
+}
+
+video {
+  width: 100%;
+}
+
 /* Utility Classes */
 /* ----------------------------------------------------- */
 
@@ -259,6 +274,24 @@ a:hover .link-arrow {
 
 .margin-right--nm {
   margin-right: calc(var(--spacing-m) * -1);
+}
+
+.breakout {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+/* var(--container-width) * 1.5 - 2 * var(--container-margin) */
+@media only screen and (min-width: 990px) {
+  .breakout {
+    width: 150%;
+    left: -25%;
+    margin: 0;
+  }
 }
 
 /* Element-specific */
