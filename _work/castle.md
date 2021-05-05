@@ -21,7 +21,7 @@ The feed is the main way cards are consumed on Castle. Previously, the feed was 
 This wasn't a great way to consume Castle cards. Cards are full of motion, but you wouldn't know by looking at a static screenshot. Also, because cards can be interacted with in a multitude of ways, it's not obvious what you're going to do with a card just by looking at a screenshot.
 
 <figure>
-    <video autoplay loop muted class="breakout">
+    <video autoplay loop muted playsinline class="breakout">
       <source src="/assets/images/castle-3.mp4" type="video/mp4">
     </video>
   <figcaption>Cards can be swiped, tapped, or dragged anywhere.</figcaption>
@@ -34,7 +34,7 @@ At first, I tried to combine them to allow people to start playing directly from
 With direct play from feed off the table, the challenge became finding a navigation experience that also provided a good preview of the play experience. Video felt like a natural medium for previewing decks, and when I recorded a few test videos it felt really promising. I paired that with a TikTok-style feed for navigation, and the result felt great:
 
 <figure>
-    <video autoplay loop muted>
+    <video autoplay loop muted playsinline>
       <source src="/assets/images/castle-4.mp4" type="video/mp4">
     </video>
   <figcaption>The feed design I came up with.</figcaption>
@@ -43,7 +43,7 @@ With direct play from feed off the table, the challenge became finding a navigat
 To source the videos, we turned to creators, adding functionality in the editor to allow them to record short snippets. It was a fun challenge to dial in the format: recording on-device was challenging performance-wise, so we were quite limited how long we could record. We found a sweet spot in a boomerang format: 2 seconds of gameplay, recorded at 12 fps, played back at 2x speed. 
 
 <figure>
-    <video autoplay loop muted class="breakout">
+    <video autoplay loop muted playsinline class="breakout">
       <source src="/assets/images/castle-5.mp4" type="video/mp4">
     </video>
   <figcaption>On the play screen, I used the card's primary color as a background color for the whole screen, to make it feel more unique to the card.</figcaption>

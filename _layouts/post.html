@@ -7,7 +7,7 @@ layout: default
         <img src={{ page.image }} class="breakout" />
         {% endif %}
         {% if page.video %}
-        <video autoplay loop muted class="breakout">
+        <video autoplay loop muted playsinline class="breakout">
             <source src={{ page.video }} type="video/mp4">
         </video>
         {% endif %}
