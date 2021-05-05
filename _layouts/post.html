@@ -3,13 +3,12 @@ layout: default
 ---
 <article itemscope itemtype="http://schema.org/BlogPosting">
     <header>
-        {% if page.image %}
-        <img src={{ page.image }} class="breakout" />
-        {% endif %}
         {% if page.video %}
-        <video autoplay loop muted playsinline class="breakout">
-            <source src={{ page.video }} type="video/mp4">
-        </video>
+            <video autoplay loop muted playsinline class="breakout">
+                <source src={{ page.video }} type="video/mp4">
+            </video>
+        {% elsif page.image %}
+            <img src={{ page.image }} class="breakout" />
         {% endif %}
         <h1 itemprop="name">{{ page.title | escape }}</h1>
     </header>

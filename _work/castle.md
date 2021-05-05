@@ -1,8 +1,11 @@
 ---
 layout: post
 title: "Castle"
-description: "Debunking the myth that Snapchat's hard-to-discover UX was a key part of their success."
+date: 2021-04-04 10:00:00 -0700
+description: "Make and play interactive cards on mobile"
 video: "/assets/images/castle-1.mp4"
+image: "/assets/images/castle-cover.png"
+thumb: "/assets/images/castle-thumb.png"
 ---
 
 Castle is a new app for making interactive cards on mobile. Cards can be tiny games, little scenes, or animations. The vibe is similar to the golden age of Flash: people making weird little stuff and sharing it with each other.

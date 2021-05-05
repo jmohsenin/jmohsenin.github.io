@@ -36,6 +36,7 @@ collections:
     output: false
   work:
     output: true
+    permalink: /:collection/:name
 
 # Build settings
 plugins:
