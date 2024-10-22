@@ -4,7 +4,6 @@ title: "Snapchat and the myth of unintuitive design"
 description: "Debunking the myth that Snapchat's hard-to-discover UX was a key part of their success."
 created: 2016-12-07 10:00:00 -0700
 updated: 2020-10-06 10:00:00 -0700
-featured: true
 ---
 This week, an idea that's circulated in the design community for the last couple of years has come back into play: that non-intuitive, primarily gesture-based interfaces have been key to Snapchat's success and moreover constitute good design. From [Intuitive Design vs Shareable Design](https://news.greylock.com/intuitive-design-vs-shareable-design-88ff6bb184bb) by Josh Elman:
 
