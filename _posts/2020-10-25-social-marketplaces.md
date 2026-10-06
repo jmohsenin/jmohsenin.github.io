@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Social/UGC products are uniquely difficult marketplaces"
+title: "Social products are uniquely difficult marketplaces"
 description: "Incentives get tricky when supplier motivations differ."
 created: 2020-10-25 10:00:00 -0700
+featured: true
 ---
 Social/user-generated content (UGC) products like Instagram, Twitter, or TikTok are a type of marketplace: creators are suppliers of content for consumers. In most marketplaces, suppliers are trying to maximize revenue, but in social/UGC suppliers have many different motivations: some want to maximize audience, while others simply want to share with their family or friends. Different motivations require different incentives, some of which compete or conflict with each other. This makes social/UGC a uniquely hard type of marketplace to build.
 

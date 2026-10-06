@@ -4,7 +4,6 @@ title: "Japan travel recs"
 description: "My recommendations of what to see, do, and eat after a few trips to Japan."
 created: 2019-11-28 19:06:07 -0700
 updated: 2024-10-21 10:00:00 -0700
-featured: true
 ---
 
 ### Itinerary
