@@ -31,8 +31,7 @@ image: /assets/images/pizza-cover.jpg
     {% for image in pizza.images %}
     {% assign image_id = image | split: "/" | last %}
     <picture data-id="{{ image_id }}" class="pizza-gallery-photo line-height--0 cursor--zoom-in">
-        <source srcset="{{ image }}@thumb.webp" type="image/webp">
-        <img loading="lazy" src="{{ image }}@thumb.jpg" />
+        <img loading="lazy" src="{{ image }}@thumb.webp" />
     </picture>
     {% endfor %}
     {% endfor %}
@@ -49,9 +48,7 @@ image: /assets/images/pizza-cover.jpg
                 {% for image in pizza.images %}
                 {% assign image_id = image | split: "/" | last %}
                 <picture id={{ image_id }} class="pizza-carousel-photo line-height--0">
-                    <source srcset="{{ image }}@thumb.webp 320w, {{ image }}.webp" type="image/webp">
-                    <source srcset="{{ image }}@thumb.jpg 320w, {{ image }}.jpg" type="image/jpg">
-                    <img loading="lazy" src="{{ image }}.jpg" />
+                    <img loading="lazy" srcset="{{ image }}@thumb.webp 320w, {{ image }}.webp" src="{{ image }}.webp" />
                 </picture>
                 {% endfor %}
             </div>

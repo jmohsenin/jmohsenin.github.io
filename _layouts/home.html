@@ -42,12 +42,10 @@ layout: default
         assets/images/pizzas/2020-10-10--4" | split: ","
         %}
 
-        {% assign pizza = site.pizzas | where:"id", page.pizza-id | last %}
         <div class="pizza-gallery margin-bottom--l">
             {% for image in pizza_preview limit: 6 %}
             <picture class="line-height--0">
-                <source srcset="{{ image }}@thumb.webp" type="image/webp">
-                <img loading="lazy" src="{{ image }}@thumb.jpg" />
+                <img loading="lazy" src="{{ image | strip }}@thumb.webp" />
             </picture>
             {% endfor %}
         </div>

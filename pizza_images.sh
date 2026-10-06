@@ -1,5 +1,5 @@
 #!/bin/bash
-# Resize raw pizza photos into thumb/full JPG + WebP variants for the site.
+# Resize raw pizza photos into thumb/full WebP variants for the site.
 #
 # Usage: ./pizza_images.sh [--force] [--dry-run] [raw_dir]
 #   --force    re-export images that already exist
@@ -55,9 +55,6 @@ for filename in "$RAW_DIR"/*.{jpg,jpeg,png,heic}; do
     echo "exporting $x"
     exported=$((exported + 1))
     $DRY_RUN && continue
-
-    magick "$filename" -resize "${THUMB}x${THUMB}" -quality $QUALITY "$EXPORT_PATH/${y}@thumb.jpg"
-    magick "$filename" -resize "${FULL}x${FULL}" -quality $QUALITY "$EXPORT_PATH/${y}.jpg"
 
     magick "$filename" -resize "${THUMB}x${THUMB}" -quality $QUALITY -define webp:lossless=false "$EXPORT_PATH/${y}@thumb.webp"
     magick "$filename" -resize "${FULL}x${FULL}" -quality $QUALITY -define webp:lossless=false "$EXPORT_PATH/${y}.webp"

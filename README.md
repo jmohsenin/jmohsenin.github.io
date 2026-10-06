@@ -8,8 +8,11 @@
 TODO: automate step #4 with Figma export CLI
 
 ## How images work
-1. Two sizes, each as JPG + WebP: 430px (`@thumb`) and 1320px. Gallery uses the thumb; carousel picks between thumb and full via `srcset`.
+1. Two WebP sizes: 430px (`@thumb`) and 1320px. Gallery uses the thumb; carousel picks between thumb and full via `srcset`.
 
 ## Starting the server
-1. `bundle exec jekyll serve`
-2. `bundle update`
+Needs Ruby 3.x (`brew install ruby@3.4`, then put `/opt/homebrew/opt/ruby@3.4/bin` on your PATH), not the macOS system Ruby. GitHub Pages' gems don't support Ruby 4 yet.
+1. `bundle install`
+2. `bundle exec jekyll serve`
+
+To pick up GitHub Pages' latest Jekyll/plugin versions: `bundle update github-pages`
